@@ -1,0 +1,9 @@
+factories,depots,cost
+Liverpool,Newcastle,0.5
+Liverpool,Birmingham,0.5
+Liverpool,London,1
+Liverpool,Exeter,0.2
+Brighton,Newcastle,1000
+Brighton,Birmingham,0.3
+Brighton,London,0.5
+Brighton,Exeter,0.2
