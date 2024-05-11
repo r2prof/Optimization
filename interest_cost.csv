@@ -1,0 +1,17 @@
+region,city,cost
+West,Los Angeles,28
+West,Chicago,84
+West,New York,112
+West,Atlanta,112
+Midwest,Los Angeles,60
+Midwest,Chicago,20
+Midwest,New York,50
+Midwest,Atlanta,50
+East,Los Angeles,96
+East,Chicago,60
+East,New York,24
+East,Atlanta,60
+South,Los Angeles,64
+South,Chicago,40
+South,New York,40
+South,Atlanta,16
