@@ -1,0 +1,51 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2025-04-29
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "Linux Mint 21.3")
+
+CPU model: AMD Ryzen 5 5600G with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+
+Optimize a model with 4 rows, 12 columns and 39 nonzeros
+Model fingerprint: 0x33ddb849
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [9e-01, 3e+00]
+  Bounds range     [6e+01, 2e+03]
+  RHS range        [6e+01, 2e+03]
+Presolve removed 0 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 4 rows, 10 columns, 37 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    0.0000000e+00   1.472500e+02   0.000000e+00      0s
+       4    1.1828861e+01   0.000000e+00   0.000000e+00      0s
+
+Solved in 4 iterations and 0.00 seconds (0.00 work units)
+Optimal objective  1.182886111e+01
+
+Cost: 11.8289
+
+Buy:
+hamburger 0.604514
+milk 6.97014
+ice cream 2.59132
+
+Adding constraint: at most 6 servings of dairy
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (linux64 - "Linux Mint 21.3")
+
+CPU model: AMD Ryzen 5 5600G with Radeon Graphics, instruction set [SSE2|AVX|AVX2]
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+
+Optimize a model with 5 rows, 12 columns and 41 nonzeros
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+03]
+  Objective range  [9e-01, 3e+00]
+  Bounds range     [6e+01, 2e+03]
+  RHS range        [6e+00, 2e+03]
+LP warm-start: use basis
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.1828861e+01   5.698333e+01   0.000000e+00      0s
+
+Solved in 0 iterations and 0.00 seconds (0.00 work units)
+Infeasible model
+No solution
