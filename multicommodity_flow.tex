@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	
+	\section*{Mathematical Model for Multi-Commodity Flow Problem}
+	
+	\subsection*{Sets}
+	\begin{align*}
+		& H = \{ \text{Pencils}, \text{Pens} \} \\
+		& N = \{ \text{Detroit}, \text{Denver}, \text{Boston}, \text{New York}, \text{Seattle} \} \\
+		& A = \{ (i, j) \mid i, j \in N, i \neq j \}
+	\end{align*}
+	
+	\subsection*{Parameters}
+	\begin{align*}
+		& \text{Capacity: } \text{capacity}_{i,j} \text{ represents the maximum flow that can pass through arc } (i, j) \\
+		& \text{Cost: } \text{cost}_{h,i,j} \text{ is the cost of transporting commodity } h \text{ from node } i \text{ to node } j \\
+		& \text{Inflow: } \text{inflow}_{h,i} \text{ is the supply (if positive) or demand (if negative) of commodity } h \text{ at node } i
+	\end{align*}
+	
+	\subsection*{Decision Variables}
+	\begin{align*}
+		& \text{Flow: } \text{flow}_{h,i,j} \text{ represents the flow of commodity } h \text{ from node } i \text{ to node } j
+	\end{align*}
+	
+	\subsection*{Objective Function}
+	Minimize the total transportation cost:
+	\begin{align*}
+		\min & \sum_{h \in H} \sum_{(i,j) \in A} \text{cost}_{h,i,j} \cdot \text{flow}_{h,i,j}
+	\end{align*}
+	
+	\subsection*{Constraints}
+	\begin{align*}
+		& \text{Capacity Constraints:} \\
+		& \text{Flow Conservation Constraints:}
+	\end{align*}
+	
+	1. Capacity Constraints:
+	\begin{align*}
+		& \text{flow}_{h,i,j} \leq \text{capacity}_{i,j} \quad \forall h \in H, \forall (i,j) \in A
+	\end{align*}
+	
+	2. Flow Conservation Constraints:
+	\begin{align*}
+		& \sum_{i \in N} \text{flow}_{h,i,j} + \text{inflow}_{h,j} = \sum_{k \in N} \text{flow}_{h,j,k} \quad \forall h \in H, \forall j \in N
+	\end{align*}
+	
+\end{document}
